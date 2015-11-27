@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Vsix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
+  <Identifier Id="Mavention.VisualStudio.ImportListInstance.Microsoft.c6068943-33f1-4200-ba5b-65690274be32">
+    <Name>Mavention Import List Instance</Name>
+    <Author>Mavention</Author>
+    <Version>1.0</Version>
+    <Description xml:space="preserve">Extension for the Visual Studio 2010 SharePoint Developert Tools that allows you to import a List Instance to your SharePoint Project.</Description>
+    <Locale>1033</Locale>
+    <MoreInfoUrl>http://blog.mastykarz.nl</MoreInfoUrl>
+    <License>license.txt</License>
+    <Icon>logo_m_35x35.png</Icon>
+    <PreviewImage>screenshot.png</PreviewImage>
+    <SupportedProducts>
+      <VisualStudio Version="10.0">
+        <Edition>Pro</Edition>
+      </VisualStudio>
+    </SupportedProducts>
+    <SupportedFrameworkRuntimeEdition MinVersion="4.0" MaxVersion="4.0" />
+  </Identifier>
+  <References />
+  <Content>
+    <MefComponent>|%CurrentProject%|</MefComponent>
+    <CustomExtension Type="SharePoint.Commands.v4">|Mavention.VisualStudio.ImportListInstance.Commands|</CustomExtension>
+  </Content>
+</Vsix>
